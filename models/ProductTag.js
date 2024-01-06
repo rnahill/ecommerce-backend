@@ -14,8 +14,8 @@ ProductTag.init(
       autoIncrement: true,
     },
 
-    // product_id, refernences product(id)
-    // tag_id, refereneces tag(id)
+    // product_id, foreign key references roduct(id)
+    // tag_id, foreign key references Tag(id)
 
   },
   {
