@@ -37,12 +37,16 @@ Product.init(
       validate: {
         isNumeric: true,
       },
-
-      // category_id, INT references category(id)
-
-
     },
-
+    // category_id, INT references category(id)
+    category_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
